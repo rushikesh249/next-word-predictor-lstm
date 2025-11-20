@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Next Word Predictor (LSTM)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🤖 Next Word Predictor (LSTM)</h1>
+      <p class="subtitle">AI-powered text completion using Long Short-Term Memory networks</p>
+    </header>
+
+    <!-- Connection Status -->
+    <div id="status" class="status-bar">
+      <span id="status-text">🔄 Checking backend connection...</span>
+    </div>
+
+    <div class="card">
+      <div class="input-section">
+        <label for="text">Enter your text prompt</label>
+        <textarea 
+          id="text" 
+          rows="4" 
+          placeholder="Type a few words to get started... (e.g., 'the quick brown')"
+          maxlength="500"
+        ></textarea>
+        <div class="char-count">
+          <span id="char-counter">0/500</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="row">
+          <label for="num">Words to predict</label>
+          <input id="num" type="number" min="1" max="10" value="3" />
+        </div>
+        
+        <button id="predict" class="predict-btn">
+          <span id="btn-text">🔮 Predict Next Words</span>
+          <span id="btn-loading" class="loading hidden">⏳ Predicting...</span>
+        </button>
+      </div>
+
+      <div id="result" class="result">
+        <div class="result-placeholder">
+          💡 Enter some text above and click "Predict" to see AI-generated word completions
+        </div>
+      </div>
+    </div>
+
+    <!-- Examples Section -->
+    <div class="examples">
+      <h3>💡 Try these examples:</h3>
+      <div class="example-buttons">
+        <button class="example-btn" data-text="the quick brown">"the quick brown"</button>
+        <button class="example-btn" data-text="machine learning is">"machine learning is"</button>
+        <button class="example-btn" data-text="artificial intelligence can">"artificial intelligence can"</button>
+        <button class="example-btn" data-text="deep neural networks">"deep neural networks"</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="tech-stack">
+        <span>🔧 <strong>Backend:</strong> Flask + TensorFlow + Keras LSTM</span>
+        <span>🎨 <strong>Frontend:</strong> Vanilla JavaScript + CSS3</span>
+      </div>
+      <div class="project-info">
+        <span>📊 <strong>Model:</strong> LSTM with 128 units, 5000 vocab, 5-word sequences</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+  </body>
+  </html>
+
+

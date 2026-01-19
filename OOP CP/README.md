@@ -5,8 +5,30 @@
 [![Flask](https://img.shields.io/badge/Flask-3.0.0-green.svg)](https://flask.palletsprojects.com)
 [![OpenMP](https://img.shields.io/badge/OpenMP-Parallel-red.svg)](https://openmp.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/rushikesh249/next-word-predictor-lstm.svg)](https://github.com/rushikesh249/next-word-predictor-lstm/commits)
+[![Stars](https://img.shields.io/github/stars/rushikesh249/next-word-predictor-lstm?style=social)](https://github.com/rushikesh249/next-word-predictor-lstm/stargazers)
 
 A sophisticated **Next Word Prediction system** using LSTM neural networks with both web interface and high-performance C++ implementations. This project demonstrates the power of deep learning for natural language processing with real-time predictions and parallel computing optimizations.
+
+## 📚 Table of Contents
+
+- [Features](#-features)
+- [Prerequisites](#-prerequisites)
+- [Quick Start](#-quick-start)
+- [Demo](#-demo)
+- [Project Structure](#-project-structure)
+- [LSTM Architecture](#-lstm-architecture)
+- [Performance Results](#-performance-results)
+- [Technology Stack](#-technology-stack)
+- [API Documentation](#-api-documentation)
+- [Configuration](#-configuration)
+- [Testing](#-testing)
+- [Visualization](#-visualization)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Educational Use](#-educational-use)
+- [Future Enhancements](#-future-enhancements)
+- [Support](#-support)
 
 ## 🌟 Features
 
@@ -18,11 +40,19 @@ A sophisticated **Next Word Prediction system** using LSTM neural networks with 
 - **📱 Responsive Design**: Works on desktop, tablet, and mobile devices
 - **🛠️ Easy Setup**: One-click startup with automated dependency management
 
+## 📦 Prerequisites
+
+- Python 3.9+ with pip
+- A modern browser (Chrome/Edge/Firefox/Safari)
+- Optional for C++ benchmarks: a C++11 compiler with OpenMP support
+  - Windows: MSVC (Visual Studio) or MinGW-w64 with -fopenmp
+  - Linux/macOS: GCC/Clang with -fopenmp
+
 ## 🚀 Quick Start
 
 ### Option 1: Automated Setup (Recommended)
 ```bash
-git clone https://github.com/yourusername/next-word-predictor-lstm.git
+git clone https://github.com/rushikesh249/next-word-predictor-lstm.git
 cd next-word-predictor-lstm
 python scripts/start_project.py
 ```
@@ -61,6 +91,7 @@ next-word-predictor-lstm/
 │   ├── app.js           # JavaScript with real-time features
 │   └── style.css        # Responsive CSS styling
 ├── 📁 cpp/              # High-performance C++ implementations
+│   ├── README.md        # C++ build and usage notes
 │   ├── main.cpp         # Sequential implementation
 │   ├── openmp.cpp       # Parallel OpenMP version
 │   └── timing.cpp       # Performance benchmarking
@@ -70,15 +101,20 @@ next-word-predictor-lstm/
 │   ├── dataset_8000.txt # Large dataset (8K words)
 │   └── dataset_10000.txt# Full dataset (10K words)
 ├── 📁 scripts/          # Utility scripts
-│   ├── start_project.py # Automated startup
+│   ├── start_project.py    # Automated startup
 │   ├── test_integration.py # Integration testing
-│   └── graph.py         # Performance visualization
+│   ├── graph.py            # Performance visualization
+│   └── verify_setup.py     # Environment and dependency checks
 ├── 📁 docs/             # Documentation
-│   ├── API.md           # API documentation
-│   ├── ARCHITECTURE.md  # System architecture
-│   └── PPT_Content.txt  # Presentation materials
+│   ├── API.md                 # API documentation
+│   ├── ARCHITECTURE.md        # System architecture
+│   └── README_INTEGRATION.md  # Integration guide
 ├── 📁 assets/           # Screenshots and media
+│   ├── frontend_interface.png
+│   └── prediction_result.png
 ├── server.py            # Flask backend with LSTM
+├── model.h5             # Saved Keras model (generated)
+├── tokenizer.pkl        # Saved tokenizer (generated)
 ├── requirements.txt     # Python dependencies
 ├── .gitignore          # Git ignore rules
 └── README.md           # This file
@@ -132,6 +168,8 @@ OpenMP parallel implementation shows remarkable speedup:
 - **Chrono** - High-precision timing
 
 ## 📖 API Documentation
+
+Full API reference is available in [docs/API.md](docs/API.md).
 
 ### Health Check
 ```http
@@ -226,8 +264,8 @@ Perfect for:
 If you encounter any issues or have questions:
 
 1. Check the [documentation](docs/)
-2. Search [existing issues](https://github.com/yourusername/next-word-predictor-lstm/issues)
-3. Create a [new issue](https://github.com/yourusername/next-word-predictor-lstm/issues/new)
+2. Search [existing issues](https://github.com/rushikesh249/next-word-predictor-lstm/issues)
+3. Create a [new issue](https://github.com/rushikesh249/next-word-predictor-lstm/issues/new)
 
 ## ⭐ Show Your Support
 
